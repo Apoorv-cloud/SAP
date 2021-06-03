@@ -64,7 +64,7 @@ flutter:
   fonts:
      - family: Serif
        fonts:
-       - asset: Serif.ttf
+       - asset: assets/Serif.ttf
 
          #SERIFASTD-BOLD.ttf
   #       - asset: fonts/Schyler-Italic.ttf
