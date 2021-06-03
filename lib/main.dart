@@ -77,14 +77,14 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Stack(
         children: [
           Positioned(
-            top: 0,
+            top: -100,
             right: 0,
             left: 0,
             child: Container(
               height: 300,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage("assets/icon.jpeg"),
+                  image: AssetImage("assets/icon.png"),
                   fit: BoxFit.fill
                 )
               ),
