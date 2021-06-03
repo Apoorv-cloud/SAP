@@ -87,7 +87,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),),
 
           Positioned(
-            top: 83,
+            top: 87,
               child: Container(
                 height: 360,
                 width: MediaQuery.of(context).size.width-40,
@@ -173,7 +173,7 @@ class _MyHomePageState extends State<MyHomePage> {
               )),
 
           Positioned(
-            top: MediaQuery.of(context).size.height-280,
+            top: MediaQuery.of(context).size.height-275,
             right: 0,
             left: 0,
             child: Column(
@@ -186,7 +186,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
               ),
 
-              SizedBox(height: 20),
+              SizedBox(height: 25),
 
               Text(
                   "Or sign-in with",
@@ -196,7 +196,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
               ),),
 
-              SizedBox(height: 20),
+              SizedBox(height: 25),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -204,7 +204,7 @@ class _MyHomePageState extends State<MyHomePage> {
                    _loginSocialMediaBtn(
                   'assets/google-icon 1.png'),
 
-                  SizedBox(width: 30),
+                  SizedBox(width: 20),
 
                   _loginSocialMediaBtn(
                       'assets/Vector.png'),
