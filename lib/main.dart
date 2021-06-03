@@ -70,15 +70,15 @@ class _MyHomePageState extends State<MyHomePage> {
       backgroundColor: Colors.white,
       //backgroundColor: Colors.white,
 
-      body: Stack(
+   body: Stack(
         children: [
           Positioned(
             top: 0,
             right: 0,
-            left: 50,
+            left: 14,
             child: Container(
-              height: 100,
-              width: 700,
+              height: MediaQuery.of(context).size.height-750,
+              width: MediaQuery.of(context).size.width-350,
               decoration: BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage("assets/img.png"),
