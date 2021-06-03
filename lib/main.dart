@@ -48,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Colors.white,
         title: Image.asset(
           "assets/Logo.png",
-          height: 150.0,
+          height: 100.0,
           width: 140.0,
         ),
           actions: <Widget>[
