@@ -8,7 +8,7 @@ import 'package:flutter/widgets.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-    systemNavigationBarColor: Colors.white, // navigation bar color
+    systemNavigationBarColor: Colors.amber, // navigation bar color
     statusBarColor: Colors.white, // status bar color
     statusBarIconBrightness: Brightness.dark, // status bar icon color
     systemNavigationBarIconBrightness: Brightness.dark, // color of navigation controls
@@ -74,11 +74,11 @@ class _MyHomePageState extends State<MyHomePage> {
         children: [
           Positioned(
             top: 0,
-            right: 0,
+            right: -5,
             left: 0,
             child: Container(
-              height: 120,
-              width: 700,
+              height: MediaQuery.of(context).size.height-670,
+              width: MediaQuery.of(context).size.width-350,
               decoration: BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage("assets/img.png"),
@@ -253,11 +253,10 @@ class _MyHomePageState extends State<MyHomePage> {
     return SizedBox.fromSize(
       size: Size(40, 40),
       child: Container(
-            decoration: new BoxDecoration(
-              border: Border.all(width: 1, color: Colors.blue[500]),
+       decoration: new BoxDecoration(
+              border: Border.all(width: 1, color: Colors.blue[400].withOpacity(0.2)),
               borderRadius: new BorderRadius.all(Radius.circular(5.0)),
               shape: BoxShape.rectangle,
-
             ), //button width and height
        child:ClipRRect(
         //borderRadius: BorderRadius.circular(5),
@@ -271,6 +270,7 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Center(
               child: Image.asset(
                 img,
+                height: 20,
               ),
             ),
           ),
