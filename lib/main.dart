@@ -201,11 +201,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
+                   _loginSocialMediaBtn(
+                  'assets/google-icon 1.png'),
                   _loginSocialMediaBtn(
                       'assets/Vector.png'),
-                  SizedBox(width: 40),
-                  _loginSocialMediaBtn(
-                  'assets/google-icon 1.png'),
                 ],
               ),
 
