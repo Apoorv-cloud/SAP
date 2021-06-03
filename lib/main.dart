@@ -48,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         backgroundColor: Colors.white,
         title: Image.asset(
-          "assets/logo.png",
+          "assets/Logo.png",
           height: 150.0,
           width: 140.0,
         ),
@@ -125,6 +125,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             style: TextStyle(
                               color: Colors.black,
                               fontSize: 25,
+                              fontFamily: "Serif",
                               // fontStyle: ,
 
                             ),
