@@ -3,10 +3,17 @@ import 'dart:ui';
 import 'package:android_login_ui/style.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() {
+  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+    systemNavigationBarColor: Colors.amber, // navigation bar color
+    statusBarColor: Colors.white, // status bar color
+    statusBarIconBrightness: Brightness.dark, // status bar icon color
+    systemNavigationBarIconBrightness: Brightness.dark, // color of navigation controls
+  ));
   runApp(MyApp());
 }
 
@@ -18,10 +25,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'TEKSNA',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
+
       home: MyHomePage(),
     );
   }
