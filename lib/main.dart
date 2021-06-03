@@ -5,7 +5,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
@@ -112,7 +111,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
 
-                      SizedBox(height: 10),
+                      SizedBox(height: 8),
 
                       Align(
                         alignment: Alignment(-0.93,0),
@@ -124,7 +123,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             'Login',
                             style: TextStyle(
                               color: Colors.black,
-                              fontSize: 25,
+                              fontSize: 40,
                               fontFamily: "Serif",
                               // fontStyle: ,
 
@@ -134,7 +133,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
 
 
-                      SizedBox(height: 25),
+                      SizedBox(height: 15),
                       _labelText('Email Address / Phone Number '),
                       _inputTextField('example@example.com', false),
                       SizedBox(height: 15),
@@ -173,7 +172,7 @@ class _MyHomePageState extends State<MyHomePage> {
               )),
 
           Positioned(
-            top: MediaQuery.of(context).size.height-310,
+            top: MediaQuery.of(context).size.height-290,
             right: 0,
             left: 0,
             child: Column(
@@ -186,13 +185,12 @@ class _MyHomePageState extends State<MyHomePage> {
 
               ),
 
-              SizedBox(height: 20),
+              SizedBox(height: 30),
 
               Text(
                   "Or sign-in with",
               style: TextStyle(
                 fontSize: 15,
-                fontWeight: FontWeight.w700,
                 color: Colors.grey[500],
 
               ),),
@@ -204,6 +202,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: <Widget>[
                    _loginSocialMediaBtn(
                   'assets/google-icon 1.png'),
+
+                  SizedBox(width: 30),
+
                   _loginSocialMediaBtn(
                       'assets/Vector.png'),
                 ],
@@ -214,7 +215,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
 
           Positioned(
-            top: MediaQuery.of(context).size.height-140,
+            top: MediaQuery.of(context).size.height-130,
             right: 0,
             left: 0,
             child: Column(children: [
@@ -250,7 +251,7 @@ class _MyHomePageState extends State<MyHomePage> {
   //button to login in using scial media,
   _loginSocialMediaBtn(String img) {
     return SizedBox.fromSize(
-      size: Size(40, 40), //button width and height
+      size: Size(30, 30), //button width and height
       child: ClipRRect(
         borderRadius: BorderRadius.circular(5),
         child: Material(
