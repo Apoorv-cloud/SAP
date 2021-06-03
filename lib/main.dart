@@ -222,7 +222,6 @@ class _MyHomePageState extends State<MyHomePage> {
               Text('Don\'t have an account? Sign Up!',
                 style: TextStyle(
                   decoration: TextDecoration.underline,
-                  fontWeight: FontWeight.w700,
                   color: Colors.blue[500],
                   fontSize: 16,
                 ),
