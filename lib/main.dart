@@ -77,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
             right: -5,
             left: 0,
             child: Container(
-              height: MediaQuery.of(context).size.height-600,
+              height: MediaQuery.of(context).size.height-680,
               width: MediaQuery.of(context).size.width-350,
               decoration: BoxDecoration(
                 image: DecorationImage(
@@ -124,7 +124,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             style: TextStyle(
                               color: Colors.black,
                               fontSize: 30,
-                              fontWeight: FontWeight.w500,
+                              fontWeight: FontWeight.w600,
                               fontFamily: "Serif",
                               // fontStyle: ,
 
