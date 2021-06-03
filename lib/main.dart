@@ -250,9 +250,15 @@ class _MyHomePageState extends State<MyHomePage> {
   //button to login in using scial media,
   _loginSocialMediaBtn(String img) {
     return SizedBox.fromSize(
-      size: Size(30, 30), //button width and height
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(5),
+      size: Size(40, 40),
+      child: Container(
+            decoration: new BoxDecoration(
+              border: Border.all(width: 1, color: Colors.blue[500]),
+              borderRadius: new BorderRadius.all(Radius.circular(5.0)),
+              shape: BoxShape.rectangle,
+            ), //button width and height
+       child:ClipRRect(
+        //borderRadius: BorderRadius.circular(5),
         child: Material(
           elevation: 16,
           shadowColor: Colors.white,
@@ -268,7 +274,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ),
       ),
-    );
+    ));
   }
 
   _inputTextField(hintText, bool obscuretext) {
