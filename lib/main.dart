@@ -8,7 +8,7 @@ import 'package:flutter/widgets.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-    systemNavigationBarColor: Colors.amber, // navigation bar color
+    systemNavigationBarColor: Colors.white, // navigation bar color
     statusBarColor: Colors.white, // status bar color
     statusBarIconBrightness: Brightness.dark, // status bar icon color
     systemNavigationBarIconBrightness: Brightness.dark, // color of navigation controls
@@ -74,11 +74,11 @@ class _MyHomePageState extends State<MyHomePage> {
         children: [
           Positioned(
             top: 0,
-            right: -5,
+            right: 0,
             left: 0,
             child: Container(
-              height: MediaQuery.of(context).size.height-670,
-              width: MediaQuery.of(context).size.width-350,
+              height: 120,
+              width: 700,
               decoration: BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage("assets/img.png"),
