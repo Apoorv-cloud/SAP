@@ -172,7 +172,7 @@ class _MyHomePageState extends State<MyHomePage> {
               )),
 
           Positioned(
-            top: MediaQuery.of(context).size.height-290,
+            top: MediaQuery.of(context).size.height-280,
             right: 0,
             left: 0,
             child: Column(
@@ -185,7 +185,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
               ),
 
-              SizedBox(height: 30),
+              SizedBox(height: 20),
 
               Text(
                   "Or sign-in with",
