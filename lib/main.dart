@@ -73,12 +73,12 @@ class _MyHomePageState extends State<MyHomePage> {
    body: Stack(
         children: [
           Positioned(
-            top: 0,
-            right: 0,
-            left: 14,
+            top: -280,
+            right: -5,
+            left: 0,
             child: Container(
-              height: MediaQuery.of(context).size.height-750,
-              width: MediaQuery.of(context).size.width-350,
+              height: MediaQuery.of(context).size.height,
+              width: MediaQuery.of(context).size.width,
               decoration: BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage("assets/img.png"),
@@ -87,7 +87,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),),
 
           Positioned(
-            top: 80,
+            top: 83,
               child: Container(
                 height: 360,
                 width: MediaQuery.of(context).size.width-40,
