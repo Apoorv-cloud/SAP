@@ -123,7 +123,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             'Login',
                             style: TextStyle(
                               color: Colors.black,
-                              fontSize: 40,
+                              fontSize: 30,
                               fontFamily: "Serif",
                               // fontStyle: ,
 
