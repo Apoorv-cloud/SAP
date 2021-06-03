@@ -73,12 +73,12 @@ class _MyHomePageState extends State<MyHomePage> {
    body: Stack(
         children: [
           Positioned(
-            top: -280,
+            top: 0,
             right: -5,
             left: 0,
             child: Container(
-              height: MediaQuery.of(context).size.height,
-              width: MediaQuery.of(context).size.width,
+              height: MediaQuery.of(context).size.height-730,
+              width: MediaQuery.of(context).size.width-350,
               decoration: BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage("assets/img.png"),
@@ -256,6 +256,7 @@ class _MyHomePageState extends State<MyHomePage> {
               border: Border.all(width: 1, color: Colors.blue[500]),
               borderRadius: new BorderRadius.all(Radius.circular(5.0)),
               shape: BoxShape.rectangle,
+
             ), //button width and height
        child:ClipRRect(
         //borderRadius: BorderRadius.circular(5),
