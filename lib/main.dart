@@ -47,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         backgroundColor: Colors.white,
         title: Image.asset(
-          "assets/Logo.png",
+          "assets/teksna.jpeg",
           height: 100.0,
           width: 140.0,
         ),
@@ -225,24 +225,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   decoration: TextDecoration.underline,
                   color: Colors.blue[500],
                   fontSize: 16,
-                ),
-
-              )
-            ],
-
-            ),
-
-
-          )
-
-
-
-        ],
-
-
-
-
-    ),
+                ),)
+            ],),)
+        ],),
     );
   }
 
