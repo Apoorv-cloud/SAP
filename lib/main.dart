@@ -48,8 +48,8 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Colors.white,
         title: Image.asset(
           "assets/teksna.jpeg",
-          height: 100.0,
-          width: 140.0,
+          height: 80.0,
+          width: 120.0,
         ),
           actions: <Widget>[
                Container(
